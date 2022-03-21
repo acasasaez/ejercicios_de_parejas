@@ -20,7 +20,19 @@ def palindromos():
                       mi_cadena.is_palindrome_iterative())
     mostrar_resultado("Es palindromo (recursivo)",
                       mi_cadena.is_palindrome_recursive())
-    print()   
+    print() 
+      
+    # Ejemplo 2
+    mi_cadena = ParseStr("Logré ver gol")
+    print("Frase de prueba 2 (" + str(len(mi_cadena)) + ") " +
+          Fore.YELLOW + mi_cadena + Fore.WHITE)
+    mostrar_resultado("Frase normalizada (" +
+                      str(len(mi_cadena.normalized_str)) + ") ",  mi_cadena.normalized_str)
+    mostrar_resultado("Es palindromo (iterativo",
+                      mi_cadena.is_palindrome_iterative())
+    mostrar_resultado("Es palindromo (recursivo)",
+                      mi_cadena.is_palindrome_recursive())
+    print()
 
 ###
 # I N I C I O   P R O G R A M A
