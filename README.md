@@ -1,2 +1,3 @@
 # ejercicios_de_parejas
-hola
+
+Enlace de este repositorio: https://github.com/acasasaez/ejercicios_de_parejas/edit/main/README.md
