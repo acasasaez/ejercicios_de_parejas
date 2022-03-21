@@ -2,7 +2,7 @@
 from menu_class import *
 from parsestr_class import *
 from colorama import *
-
+from helpers import *
 
 
 #
@@ -21,7 +21,7 @@ def palindromos():
 ###
 # I N I C I O   P R O G R A M A
 #
-
+helpers.clear()   #Limpia la terminal
 mi_menu = Menu("TAREAS ORIENTACION A OBJTOS")
 mi_menu.addOption("Palindromos Object Oriented",
                   palindromos)
