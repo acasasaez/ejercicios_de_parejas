@@ -5,4 +5,3 @@ class A:
     def y(self, t): 
         return len(t) 
  
-h 
