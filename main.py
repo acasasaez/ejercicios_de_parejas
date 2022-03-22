@@ -81,8 +81,10 @@ def puzzle ():
       mostrar_resultado ("y(a)", y(a)) #a es un representante de A y estamos aplicando el método z sobre a, 
       #por lo tanto es como si estuviésmos imprimiendo A,
       # lo que nos dará como resultado una cadena descriptiva
-      aa = a()
-      mostrar_resultado ("aa is a()", aa is a())
+      aa = a() #a es un referente a A y por lo tanto a() es una instancia de A,
+      #así aa será una instancia de A
+      mostrar_resultado ("aa is a()", aa is a()) #como aa y a() son dos instancias de A 
+      #como no son lo mismo al compararlas nos devuelve False
       z = aa.y
       mostrar_resultado ("z(())",z(()))
       mostrar_resultado ("a().y((a,))", a().y((a,)))
