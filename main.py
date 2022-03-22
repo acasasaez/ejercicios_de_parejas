@@ -76,9 +76,11 @@ def palindromos_clase():
                         Palindromo_V2.is_palindrome(mi_cadena))
 
 def puzzle (): 
-      a = A
-      y = a.z
-      mostrar_resultado ("y(a)", y(a))
+      a = A #a se convierte en una referencia a nuestra clase A
+      y = a.z #y es una referencia al método z de la clase a 
+      mostrar_resultado ("y(a)", y(a)) #a es un representante de A y estamos aplicando el método z sobre a, 
+      #por lo tanto es como si estuviésmos imprimiendo A,
+      # lo que nos dará como resultado una cadena descriptiva
       aa = a()
       mostrar_resultado ("aa is a()", aa is a())
       z = aa.y
