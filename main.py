@@ -81,8 +81,8 @@ def palindromos_clase():
 #
 helpers.clear()   #Limpia la terminal
 mi_menu = Menu("TAREAS ORIENTACION A OBJTOS")
-mi_menu.addOption("Palindromos Object Oriented",
-                  palindromos_instancia)
+mi_menu.addOption("Palindromo con métodos de instáncia", palindromos_instancia)
+mi_menu.addOption("Palindromo con métodos de clase", palindromos_clase)
 
 
 mi_menu.start()
