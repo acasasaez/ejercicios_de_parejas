@@ -85,8 +85,9 @@ def puzzle ():
       #así aa será una instancia de A
       mostrar_resultado ("aa is a()", aa is a()) #como aa y a() son dos instancias de A 
       #como no son lo mismo al compararlas nos devuelve False
-      z = aa.y
-      mostrar_resultado ("z(())",z(()))
+      z = aa.y #z se convierte en una referencia al método y del objeto aa, que devuelve la longitud del parámetro
+      mostrar_resultado ("z(())",z(())) #llamamos al método y del objeto aa y le pasamos por parámetro una 
+      #tupla vacía, por lo tanto nos devolverá como resultado el valor 0
       mostrar_resultado ("a().y((a,))", a().y((a,)))
       mostrar_resultado("A.y(aa,(a,z))", A.y(aa,(a,z)))
       mostrar_resultado ("aa.y((z,1,`z´))", aa.y((z,1,"z")))
