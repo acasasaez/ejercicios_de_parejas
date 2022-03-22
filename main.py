@@ -88,7 +88,8 @@ def puzzle ():
       z = aa.y #z se convierte en una referencia al método y del objeto aa, que devuelve la longitud del parámetro
       mostrar_resultado ("z(())",z(())) #llamamos al método y del objeto aa y le pasamos por parámetro una 
       #tupla vacía, por lo tanto nos devolverá como resultado el valor 0
-      mostrar_resultado ("a().y((a,))", a().y((a,)))
+      mostrar_resultado ("a().y((a,))", a().y((a,))) # se crea una instancia de la clase A y llamamos a su método y (contador) 
+      # desputés le pasamos por parámetro la tupla (a,), que tiene longitud 1, por lo tanto el resultado será 1.
       mostrar_resultado("A.y(aa,(a,z))", A.y(aa,(a,z)))
       mostrar_resultado ("aa.y((z,1,`z´))", aa.y((z,1,"z")))
 
