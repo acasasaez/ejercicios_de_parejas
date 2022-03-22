@@ -5,6 +5,7 @@ from colorama import *
 from helpers import *
 from palindromo_v2_class import *
 from puzzle_class import*
+
 #
 # F U N C I O N E S
 #
@@ -85,9 +86,11 @@ def puzzle ():
       mostrar_resultado ("a().y((a,))", a().y((a,)))
       mostrar_resultado("A.y(aa,(a,z))", A.y(aa,(a,z)))
       mostrar_resultado ("aa.y((z,1,`z´))", aa.y((z,1,"z")))
+
 ###
 # I N I C I O   P R O G R A M A
-#
+###
+
 helpers.clear()   #Limpia la terminal
 mi_menu = Menu("TAREAS ORIENTACION A OBJTOS")
 mi_menu.addOption("Palindromo con métodos de instáncia", palindromos_instancia)
