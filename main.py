@@ -5,7 +5,7 @@ from colorama import *
 from helpers import *
 from palindromo_v2_class import *
 from puzzle_class import*
-
+from Logger_class import *
 #
 # F U N C I O N E S
 #
@@ -86,6 +86,7 @@ def puzzle ():
       mostrar_resultado ("a().y((a,))", a().y((a,)))
       mostrar_resultado("A.y(aa,(a,z))", A.y(aa,(a,z)))
       mostrar_resultado ("aa.y((z,1,`z´))", aa.y((z,1,"z")))
+
 def test_logger():
       mi_log = Logger("", "log_de_prueba.txt")
 
