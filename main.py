@@ -86,7 +86,21 @@ def puzzle ():
       mostrar_resultado ("a().y((a,))", a().y((a,)))
       mostrar_resultado("A.y(aa,(a,z))", A.y(aa,(a,z)))
       mostrar_resultado ("aa.y((z,1,`z´))", aa.y((z,1,"z")))
+def test_logger():
+      mi_log = Logger("", "log_de_prueba.txt")
 
+      mi_log.show()
+
+      print()
+      print("· Añado lineas en el log")
+      for i in range(1,6):
+            if i==1:
+                  mi_log.log("Primera llamada")
+            else:
+                  mi_log.log("{} Lamada".format(str(i)))
+      print()
+
+      mi_log.show()
 ###
 # I N I C I O   P R O G R A M A
 ###
@@ -95,6 +109,7 @@ helpers.clear()   #Limpia la terminal
 mi_menu = Menu("TAREAS ORIENTACION A OBJTOS")
 mi_menu.addOption("Palindromo con métodos de instáncia", palindromos_instancia)
 mi_menu.addOption("Palindromo con métodos de clase", palindromos_clase)
+mi_menu.addOption("Logger", test_logger)
 
 
 mi_menu.start()
