@@ -90,8 +90,11 @@ def puzzle ():
       #tupla vacía, por lo tanto nos devolverá como resultado el valor 0
       mostrar_resultado ("a().y((a,))", a().y((a,))) # se crea una instancia de la clase A y llamamos a su método y (contador) 
       # desputés le pasamos por parámetro la tupla (a,), que tiene longitud 1, por lo tanto el resultado será 1.
-      mostrar_resultado("A.y(aa,(a,z))", A.y(aa,(a,z)))
-      mostrar_resultado ("aa.y((z,1,`z´))", aa.y((z,1,"z")))
+      mostrar_resultado("A.y(aa,(a,z))", A.y(aa,(a,z))) #llama al método y de la instancia aa que devuelve la longitud del parámetro
+      #solo que en este caso lo llama como si fuese un método de clase y le pasa el objeto por parámetro
+      #como parámetro t pasamos una tupla de valor (a,z), que tiene longitud 2, por lo que se imprime "2"
+      mostrar_resultado ("aa.y((z,1,`z´))", aa.y((z,1,"z"))) #llamamos al método y del objeto aa que devuelve la longitud del parámetro
+      #pasamos por parámetro una tupla de 3 elementos, por lo que imprimirá "3"
 
 def test_logger():
       mi_log = Logger("", "log_de_prueba.txt")
