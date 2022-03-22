@@ -4,7 +4,7 @@ from palindromo_v1_class import *
 from colorama import *
 from helpers import *
 from palindromo_v2_class import *
-
+from puzzle_class import*
 #
 # F U N C I O N E S
 #
@@ -74,8 +74,17 @@ def palindromos_clase():
       mostrar_resultado("Es palindromo",
                         Palindromo_V2.is_palindrome(mi_cadena))
 
-
-
+def puzzle (): 
+      a = A
+      y = a.z
+      mostrar_resultado ("y(a)", y(a))
+      aa = a()
+      mostrar_resultado ("aa is a()", aa is a())
+      z = aa.y
+      mostrar_resultado ("z(())",z(()))
+      mostrar_resultado ("a().y((a,))", a().y((a,)))
+      mostrar_resultado("A.y(aa,(a,z))", A.y(aa,(a,z)))
+      mostrar_resultado ("aa.y((z,1,`z´))", aa.y((z,1,"z")))
 ###
 # I N I C I O   P R O G R A M A
 #
