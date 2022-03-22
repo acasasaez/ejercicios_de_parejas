@@ -1,6 +1,6 @@
 # Como usar el método str.maketrans() .... https://www.w3schools.com/python/ref_string_maketrans.asp
 
-class ParseStr(str):
+class Palindromo_V1(str):
     # ParseStr es un nuevo tipo de cadena que incluye normalización y test de palíndromo
     from_chars = "áàäâéèëêíìïîóòöôúùüû"
     to_chars = "aaaaeeeeiiiioooouuuu"
@@ -21,23 +21,10 @@ class ParseStr(str):
         self.normalized_str = self.normalized_str.translate(
             self.translate_dictionary)
 
-    def is_palindrome_iterative(self) -> bool:
+    def is_palindrome(self) -> bool:
         l = len(self.normalized_str)
         for idx in range(0, int(l/2)):
             if (self.normalized_str[idx]!=self.normalized_str[-1*(idx+1)]):
                 return False
 
         return True
-
-    def is_palindrome_recursive(self, idx=0) -> bool:
-        l = len(self.normalized_str)
-
-        # Condición fin recursividad
-        if idx>=len(self.normalized_str):
-            return True
-        
-        if (self.normalized_str[idx]!=self.normalized_str[-1*(idx+1)]):
-            return False
-
-        # Llamada recursiva
-        return self.is_palindrome_recursive(idx+1)
